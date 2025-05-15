@@ -3,7 +3,7 @@
 	"sites": [
 		{
 			"key": "drpy_js_360影视",
-			"name": "😈心魔自用😈 ",
+			"name": "📢小魔女",
 			"type": 3,
 			"api": "./dr/lib/drpy2.min.js",
 			"ext": "./dr/js/360影视.js"
