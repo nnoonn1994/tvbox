@@ -1,0 +1,2058 @@
+# classes.dex
+
+.class public Lcom/androidx/vh0;
+.super Lcom/androidx/oOOO00Oo;
+.source "SourceFile"
+
+
+# static fields
+.field public static final synthetic Oooo0OO:I
+
+
+# instance fields
+.field public OooOO0o:Landroid/widget/TextView;
+
+.field public OooOOO:Landroid/widget/LinearLayout;
+
+.field public OooOOO0:Landroid/widget/TextView;
+
+.field public OooOOOO:Landroid/widget/TextView;
+
+.field public OooOOOo:Landroid/widget/TextView;
+
+.field public OooOOo:Landroid/widget/TextView;
+
+.field public OooOOo0:Landroid/widget/TextView;
+
+.field public OooOOoo:Landroid/widget/TextView;
+
+.field public OooOo:Landroid/widget/TextView;
+
+.field public OooOo0:Landroid/widget/TextView;
+
+.field public OooOo00:Landroid/widget/TextView;
+
+.field public OooOo0O:Landroid/widget/TextView;
+
+.field public OooOo0o:Landroid/widget/TextView;
+
+.field public OooOoO:Landroid/view/View;
+
+.field public OooOoO0:Landroid/widget/TextView;
+
+.field public OooOoOO:Landroid/widget/TextView;
+
+.field public final OooOoo:Lcom/github/tvbox/osc/bean/LiveSourceBean;
+
+.field public final OooOoo0:I
+
+.field public OooOooO:Ljava/lang/String;
+
+.field public OooOooo:Landroid/widget/TextView;
+
+.field public Oooo0:Landroid/widget/TextView;
+
+.field public Oooo000:I
+
+.field public Oooo00O:Landroid/widget/TextView;
+
+.field public Oooo00o:Landroid/widget/TextView;
+
+.field public final Oooo0O0:Ljava/io/File;
+
+
+# direct methods
+.method public constructor <init>()V
+    .registers 4
+
+    .line 1
+    invoke-direct {p0}, Lcom/androidx/oOOO00Oo;-><init>()V
+
+    .line 4
+    const/4 v0, 0x2
+
+    .line 5
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 8
+    move-result-object v0
+
+    .line 9
+    const-string v1, "HOME_CELLS_COUNT"
+
+    .line 11
+    invoke-static {v1, v0}, Lcom/androidx/lu;->OooOo0o(Ljava/lang/String;Ljava/lang/Integer;)I
+
+    .line 14
+    move-result v0
+
+    .line 15
+    iput v0, p0, Lcom/androidx/vh0;->OooOoo0:I
+
+    .line 17
+    const-string v0, "live_source_url_current"
+
+    .line 19
+    const-class v1, Lcom/github/tvbox/osc/bean/LiveSourceBean;
+
+    .line 21
+    invoke-static {v1, v0}, Lcom/androidx/sm0;->OooOOoo(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Object;
+
+    .line 24
+    move-result-object v0
+
+    .line 25
+    check-cast v0, Lcom/github/tvbox/osc/bean/LiveSourceBean;
+
+    .line 27
+    iput-object v0, p0, Lcom/androidx/vh0;->OooOoo:Lcom/github/tvbox/osc/bean/LiveSourceBean;
+
+    .line 29
+    new-instance v0, Ljava/io/File;
+
+    .line 31
+    invoke-static {}, Lcom/androidx/pm0;->OooO0O0()Ljava/lang/String;
+
+    .line 34
+    move-result-object v1
+
+    .line 35
+    const-string v2, "exo-video-cache"
+
+    .line 37
+    invoke-direct {v0, v1, v2}, Ljava/io/File;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 40
+    iput-object v0, p0, Lcom/androidx/vh0;->Oooo0O0:Ljava/io/File;
+
+    .line 42
+    return-void
+.end method
+
+
+# virtual methods
+.method public final OooO()V
+    .registers 3
+
+    .line 1
+    sget v0, Lcom/github/tvbox/osc/R$id;->operateText:I
+
+    .line 3
+    invoke-virtual {p0, v0}, Lcom/androidx/oOOO00Oo;->OooO0OO(I)Landroid/view/View;
+
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, Landroid/widget/TextView;
+
+    .line 9
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->requireContext()Landroid/content/Context;
+
+    .line 12
+    move-result-object v1
+
+    .line 13
+    invoke-static {v1}, Lcom/androidx/ku;->Oooo0(Landroid/content/Context;)Z
+
+    .line 16
+    move-result v1
+
+    .line 17
+    if-eqz v1, :cond_18
+
+    .line 19
+    const-string v1, "电视"
+
+    .line 21
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 24
+    goto :goto_1d
+
+    .line 25
+    :cond_18
+    const-string v1, "平板"
+
+    .line 27
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 30
+    :goto_1d
+    return-void
+.end method
+
+.method public final OooO0Oo()I
+    .registers 2
+
+    sget v0, Lcom/github/tvbox/osc/R$layout;->fragment_model_new2:I
+
+    return v0
+.end method
+
+.method public final OooO0o0()V
+    .registers 12
+
+    .line 1
+    invoke-static {}, Lcom/androidx/mm;->OooO0O0()Lcom/androidx/mm;
+
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-virtual {v0, p0}, Lcom/androidx/mm;->OooOO0(Ljava/lang/Object;)V
+
+    .line 8
+    sget v0, Lcom/github/tvbox/osc/R$id;->showFastSearchText:I
+
+    .line 10
+    invoke-virtual {p0, v0}, Lcom/androidx/oOOO00Oo;->OooO0OO(I)Landroid/view/View;
+
+    .line 13
+    move-result-object v0
+
+    .line 14
+    check-cast v0, Landroid/widget/TextView;
+
+    .line 16
+    iput-object v0, p0, Lcom/androidx/vh0;->OooOoO0:Landroid/widget/TextView;
+
+    .line 18
+    sget v0, Lcom/github/tvbox/osc/R$id;->clear_data:I
+
+    .line 20
+    invoke-virtual {p0, v0}, Lcom/androidx/oOOO00Oo;->OooO0OO(I)Landroid/view/View;
+
+    .line 23
+    move-result-object v0
+
+    .line 24
+    iput-object v0, p0, Lcom/androidx/vh0;->OooOoO:Landroid/view/View;
+
+    .line 26
+    iget-object v0, p0, Lcom/androidx/vh0;->OooOoO0:Landroid/widget/TextView;
+
+    .line 28
+    invoke-static {}, Lcom/androidx/fy0;->OooOO0o()Ljava/lang/String;
+
+    .line 31
+    move-result-object v1
+
+    .line 32
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 35
+    sget v0, Lcom/github/tvbox/osc/R$id;->showPreviewText:I
+
+    .line 37
+    invoke-virtual {p0, v0}, Lcom/androidx/oOOO00Oo;->OooO0OO(I)Landroid/view/View;
+
+    .line 40
+    move-result-object v0
+
+    .line 41
+    check-cast v0, Landroid/widget/TextView;
+
+    .line 43
+    iput-object v0, p0, Lcom/androidx/vh0;->OooOo:Landroid/widget/TextView;
+
+    .line 45
+    const-string v1, "show_preview"
+
+    .line 47
+    sget-object v2, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+
+    .line 49
+    invoke-static {v1, v2}, Lcom/androidx/lu;->OooOOo(Ljava/lang/String;Ljava/lang/Boolean;)Z
+
+    .line 52
+    move-result v1
+
+    .line 53
+    if-eqz v1, :cond_39
+
+    .line 55
+    const-string v1, "开启"
+
+    .line 57
+    goto :goto_3b
+
+    .line 58
+    :cond_39
+    const-string v1, "关闭"
+
+    .line 60
+    :goto_3b
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 63
+    sget v0, Lcom/github/tvbox/osc/R$id;->llSearchThreadCount:I
+
+    .line 65
+    invoke-virtual {p0, v0}, Lcom/androidx/oOOO00Oo;->OooO0OO(I)Landroid/view/View;
+
+    .line 68
+    move-result-object v0
+
+    .line 69
+    check-cast v0, Landroid/widget/LinearLayout;
+
+    .line 71
+    iput-object v0, p0, Lcom/androidx/vh0;->OooOOO:Landroid/widget/LinearLayout;
+
+    .line 73
+    sget v0, Lcom/github/tvbox/osc/R$id;->tvSearchThreadCount:I
+
+    .line 75
+    invoke-virtual {p0, v0}, Lcom/androidx/oOOO00Oo;->OooO0OO(I)Landroid/view/View;
+
+    .line 78
+    move-result-object v0
+
+    .line 79
+    check-cast v0, Landroid/widget/TextView;
+
+    .line 81
+    iput-object v0, p0, Lcom/androidx/vh0;->OooOOO0:Landroid/widget/TextView;
+
+    .line 83
+    sget v0, Lcom/github/tvbox/osc/R$id;->tvMediaCodec:I
+
+    .line 85
+    invoke-virtual {p0, v0}, Lcom/androidx/oOOO00Oo;->OooO0OO(I)Landroid/view/View;
+
+    .line 88
+    move-result-object v0
+
+    .line 89
+    check-cast v0, Landroid/widget/TextView;
+
+    .line 91
+    iput-object v0, p0, Lcom/androidx/vh0;->OooOO0o:Landroid/widget/TextView;
+
+    .line 93
+    sget v0, Lcom/github/tvbox/osc/R$id;->tvPlay:I
+
+    .line 95
+    invoke-virtual {p0, v0}, Lcom/androidx/oOOO00Oo;->OooO0OO(I)Landroid/view/View;
+
+    .line 98
+    move-result-object v0
+
+    .line 99
+    check-cast v0, Landroid/widget/TextView;
+
+    .line 101
+    iput-object v0, p0, Lcom/androidx/vh0;->OooOOOO:Landroid/widget/TextView;
+
+    .line 103
+    sget v0, Lcom/github/tvbox/osc/R$id;->tvRenderType:I
+
+    .line 105
+    invoke-virtual {p0, v0}, Lcom/androidx/oOOO00Oo;->OooO0OO(I)Landroid/view/View;
+
+    .line 108
+    move-result-object v0
+
+    .line 109
+    check-cast v0, Landroid/widget/TextView;
+
+    .line 111
+    iput-object v0, p0, Lcom/androidx/vh0;->OooOOOo:Landroid/widget/TextView;
+
+    .line 113
+    sget v0, Lcom/github/tvbox/osc/R$id;->tvScaleType:I
+
+    .line 115
+    invoke-virtual {p0, v0}, Lcom/androidx/oOOO00Oo;->OooO0OO(I)Landroid/view/View;
+
+    .line 118
+    move-result-object v0
+
+    .line 119
+    check-cast v0, Landroid/widget/TextView;
+
+    .line 121
+    iput-object v0, p0, Lcom/androidx/vh0;->OooOOo0:Landroid/widget/TextView;
+
+    .line 123
+    sget v0, Lcom/github/tvbox/osc/R$id;->tvApi:I
+
+    .line 125
+    invoke-virtual {p0, v0}, Lcom/androidx/oOOO00Oo;->OooO0OO(I)Landroid/view/View;
+
+    .line 128
+    move-result-object v0
+
+    .line 129
+    check-cast v0, Landroid/widget/TextView;
+
+    .line 131
+    iput-object v0, p0, Lcom/androidx/vh0;->OooOOo:Landroid/widget/TextView;
+
+    .line 133
+    sget v0, Lcom/github/tvbox/osc/R$id;->tvHomeApi:I
+
+    .line 135
+    invoke-virtual {p0, v0}, Lcom/androidx/oOOO00Oo;->OooO0OO(I)Landroid/view/View;
+
+    .line 138
+    move-result-object v0
+
+    .line 139
+    check-cast v0, Landroid/widget/TextView;
+
+    .line 141
+    iput-object v0, p0, Lcom/androidx/vh0;->OooOOoo:Landroid/widget/TextView;
+
+    .line 143
+    sget v0, Lcom/github/tvbox/osc/R$id;->tvDns:I
+
+    .line 145
+    invoke-virtual {p0, v0}, Lcom/androidx/oOOO00Oo;->OooO0OO(I)Landroid/view/View;
+
+    .line 148
+    move-result-object v0
+
+    .line 149
+    check-cast v0, Landroid/widget/TextView;
+
+    .line 151
+    iput-object v0, p0, Lcom/androidx/vh0;->OooOo00:Landroid/widget/TextView;
+
+    .line 153
+    sget v0, Lcom/github/tvbox/osc/R$id;->tvHomeRec:I
+
+    .line 155
+    invoke-virtual {p0, v0}, Lcom/androidx/oOOO00Oo;->OooO0OO(I)Landroid/view/View;
+
+    .line 158
+    move-result-object v0
+
+    .line 159
+    check-cast v0, Landroid/widget/TextView;
+
+    .line 161
+    iput-object v0, p0, Lcom/androidx/vh0;->OooOo0:Landroid/widget/TextView;
+
+    .line 163
+    sget v0, Lcom/github/tvbox/osc/R$id;->tvHistoryNum:I
+
+    .line 165
+    invoke-virtual {p0, v0}, Lcom/androidx/oOOO00Oo;->OooO0OO(I)Landroid/view/View;
+
+    .line 168
+    move-result-object v0
+
+    .line 169
+    check-cast v0, Landroid/widget/TextView;
+
+    .line 171
+    iput-object v0, p0, Lcom/androidx/vh0;->OooOo0O:Landroid/widget/TextView;
+
+    .line 173
+    sget v0, Lcom/github/tvbox/osc/R$id;->tvSearchView:I
+
+    .line 175
+    invoke-virtual {p0, v0}, Lcom/androidx/oOOO00Oo;->OooO0OO(I)Landroid/view/View;
+
+    .line 178
+    move-result-object v0
+
+    .line 179
+    check-cast v0, Landroid/widget/TextView;
+
+    .line 181
+    iput-object v0, p0, Lcom/androidx/vh0;->OooOo0o:Landroid/widget/TextView;
+
+    .line 183
+    sget v0, Lcom/github/tvbox/osc/R$id;->home_cell_text:I
+
+    .line 185
+    invoke-virtual {p0, v0}, Lcom/androidx/oOOO00Oo;->OooO0OO(I)Landroid/view/View;
+
+    .line 188
+    move-result-object v0
+
+    .line 189
+    check-cast v0, Landroid/widget/TextView;
+
+    .line 191
+    iput-object v0, p0, Lcom/androidx/vh0;->OooOoOO:Landroid/widget/TextView;
+
+    .line 193
+    iget-object v0, p0, Lcom/androidx/vh0;->OooOO0o:Landroid/widget/TextView;
+
+    .line 195
+    const-string v1, "ijk_codec"
+
+    .line 197
+    const-string v2, "硬解码"
+
+    .line 199
+    invoke-static {v1, v2}, Lcom/androidx/lu;->OooOoOO(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 202
+    move-result-object v1
+
+    .line 203
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 206
+    const-string v0, "api_url"
+
+    .line 208
+    const-string v1, ""
+
+    .line 210
+    invoke-static {v0, v1}, Lcom/androidx/lu;->OooOoOO(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 213
+    move-result-object v0
+
+    .line 214
+    const-class v2, Lcom/github/tvbox/osc/bean/MoreSourceBean;
+
+    .line 216
+    const-string v3, "api_url_bean"
+
+    .line 218
+    invoke-static {v2, v3}, Lcom/androidx/sm0;->OooOOoo(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Object;
+
+    .line 221
+    move-result-object v3
+
+    .line 222
+    check-cast v3, Lcom/github/tvbox/osc/bean/MoreSourceBean;
+
+    .line 224
+    if-nez v3, :cond_e7
+
+    .line 226
+    iget-object v3, p0, Lcom/androidx/vh0;->OooOOo:Landroid/widget/TextView;
+
+    .line 228
+    invoke-virtual {v3, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 231
+    goto :goto_fa
+
+    .line 232
+    :cond_e7
+    invoke-virtual {v3}, Lcom/github/tvbox/osc/bean/MoreSourceBean;->getSourceUrl()Ljava/lang/String;
+
+    .line 235
+    move-result-object v4
+
+    .line 236
+    invoke-static {v4, v0}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
+
+    .line 239
+    move-result v0
+
+    .line 240
+    if-eqz v0, :cond_fa
+
+    .line 242
+    iget-object v0, p0, Lcom/androidx/vh0;->OooOOo:Landroid/widget/TextView;
+
+    .line 244
+    invoke-virtual {v3}, Lcom/github/tvbox/osc/bean/MoreSourceBean;->getSourceName()Ljava/lang/String;
+
+    .line 247
+    move-result-object v3
+
+    .line 248
+    invoke-virtual {v0, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 251
+    :cond_fa
+    :goto_fa
+    sget v0, Lcom/github/tvbox/osc/R$id;->forbidJarDialog:I
+
+    .line 253
+    invoke-virtual {p0, v0}, Lcom/androidx/oOOO00Oo;->OooO0OO(I)Landroid/view/View;
+
+    .line 256
+    move-result-object v0
+
+    .line 257
+    new-instance v3, Lcom/androidx/vg0;
+
+    .line 259
+    const/4 v4, 0x0
+
+    .line 260
+    invoke-direct {v3, p0, v4}, Lcom/androidx/vg0;-><init>(Lcom/androidx/vh0;I)V
+
+    .line 263
+    invoke-virtual {v0, v3}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 266
+    const/4 v0, 0x2
+
+    .line 267
+    new-array v3, v0, [Ljava/lang/Object;
+
+    .line 269
+    iget v5, p0, Lcom/androidx/vh0;->OooOoo0:I
+
+    .line 271
+    invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 274
+    move-result-object v5
+
+    .line 275
+    aput-object v5, v3, v4
+
+    .line 277
+    const-string v5, "列"
+
+    .line 279
+    const/4 v6, 0x1
+
+    .line 280
+    aput-object v5, v3, v6
+
+    .line 282
+    const-string v5, "%d%s"
+
+    .line 284
+    invoke-static {v5, v3}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    .line 287
+    move-result-object v3
+
+    .line 288
+    iput-object v3, p0, Lcom/androidx/vh0;->OooOooO:Ljava/lang/String;
+
+    .line 290
+    iget-object v5, p0, Lcom/androidx/vh0;->OooOoOO:Landroid/widget/TextView;
+
+    .line 292
+    invoke-virtual {v5, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 295
+    sget v3, Lcom/github/tvbox/osc/R$id;->home_cells_reorder:I
+
+    .line 297
+    invoke-virtual {p0, v3}, Lcom/androidx/oOOO00Oo;->OooO0OO(I)Landroid/view/View;
+
+    .line 300
+    move-result-object v3
+
+    .line 301
+    check-cast v3, Landroid/widget/LinearLayout;
+
+    .line 303
+    new-instance v5, Lcom/androidx/nh0;
+
+    .line 305
+    invoke-direct {v5, p0, v6}, Lcom/androidx/nh0;-><init>(Lcom/androidx/vh0;I)V
+
+    .line 308
+    invoke-virtual {v3, v5}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 311
+    new-instance v5, Lcom/androidx/wg0;
+
+    .line 313
+    invoke-direct {v5, p0, v6}, Lcom/androidx/wg0;-><init>(Lcom/androidx/vh0;I)V
+
+    .line 316
+    invoke-virtual {v3, v5}, Landroid/view/View;->setOnLongClickListener(Landroid/view/View$OnLongClickListener;)V
+
+    .line 319
+    sget v3, Lcom/github/tvbox/osc/R$id;->home_tab_text:I
+
+    .line 321
+    invoke-virtual {p0, v3}, Lcom/androidx/oOOO00Oo;->OooO0OO(I)Landroid/view/View;
+
+    .line 324
+    move-result-object v3
+
+    .line 325
+    check-cast v3, Landroid/widget/TextView;
+
+    .line 327
+    iput-object v3, p0, Lcom/androidx/vh0;->OooOooo:Landroid/widget/TextView;
+
+    .line 329
+    invoke-static {}, Lcom/androidx/vw;->OooO0O0()Ljava/util/ArrayList;
+
+    .line 332
+    move-result-object v5
+
+    .line 333
+    invoke-virtual {v5}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    .line 336
+    move-result-object v5
+
+    .line 337
+    :cond_150
+    invoke-interface {v5}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 340
+    move-result v7
+
+    .line 341
+    if-eqz v7, :cond_162
+
+    .line 343
+    invoke-interface {v5}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 346
+    move-result-object v7
+
+    .line 347
+    check-cast v7, Lcom/github/tvbox/osc/bean/HomeTabBean;
+
+    .line 349
+    iget-boolean v7, v7, Lcom/github/tvbox/osc/bean/HomeTabBean;->isModify:Z
+
+    .line 351
+    if-eqz v7, :cond_150
+
+    .line 353
+    const/4 v5, 0x1
+
+    .line 354
+    goto :goto_163
+
+    .line 355
+    :cond_162
+    const/4 v5, 0x0
+
+    .line 356
+    :goto_163
+    if-eqz v5, :cond_168
+
+    .line 358
+    const-string v5, "自定义"
+
+    .line 360
+    goto :goto_16a
+
+    .line 361
+    :cond_168
+    const-string v5, "默认"
+
+    .line 363
+    :goto_16a
+    invoke-virtual {v3, v5}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 366
+    sget v3, Lcom/github/tvbox/osc/R$id;->home_cells:I
+
+    .line 368
+    invoke-virtual {p0, v3}, Lcom/androidx/oOOO00Oo;->OooO0OO(I)Landroid/view/View;
+
+    .line 371
+    move-result-object v3
+
+    .line 372
+    new-instance v5, Lcom/androidx/nh0;
+
+    .line 374
+    const/4 v7, 0x4
+
+    .line 375
+    invoke-direct {v5, p0, v7}, Lcom/androidx/nh0;-><init>(Lcom/androidx/vh0;I)V
+
+    .line 378
+    invoke-virtual {v3, v5}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 381
+    iget-object v3, p0, Lcom/androidx/vh0;->OooOo00:Landroid/widget/TextView;
+
+    .line 383
+    sget-object v5, Lcom/androidx/il0;->OooO0OO:Ljava/util/ArrayList;
+
+    .line 385
+    const-string v8, "doh_url"
+
+    .line 387
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 390
+    move-result-object v9
+
+    .line 391
+    invoke-static {v8, v9}, Lcom/androidx/lu;->OooOo0o(Ljava/lang/String;Ljava/lang/Integer;)I
+
+    .line 394
+    move-result v8
+
+    .line 395
+    invoke-virtual {v5, v8}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    .line 398
+    move-result-object v5
+
+    .line 399
+    check-cast v5, Ljava/lang/CharSequence;
+
+    .line 401
+    invoke-virtual {v3, v5}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 404
+    iget-object v3, p0, Lcom/androidx/vh0;->OooOo0:Landroid/widget/TextView;
+
+    .line 406
+    const-string v5, "home_rec"
+
+    .line 408
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 411
+    move-result-object v8
+
+    .line 412
+    invoke-static {v5, v8}, Lcom/androidx/lu;->OooOo0o(Ljava/lang/String;Ljava/lang/Integer;)I
+
+    .line 415
+    move-result v5
+
+    .line 416
+    if-ne v5, v6, :cond_1a4
+
+    .line 418
+    const-string v5, "站点推荐"
+
+    .line 420
+    goto :goto_1ab
+
+    .line 421
+    :cond_1a4
+    if-ne v5, v0, :cond_1a9
+
+    .line 423
+    const-string v5, "观看历史"
+
+    .line 425
+    goto :goto_1ab
+
+    .line 426
+    :cond_1a9
+    const-string v5, "豆瓣热播"
+
+    .line 428
+    :goto_1ab
+    invoke-virtual {v3, v5}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 431
+    iget-object v3, p0, Lcom/androidx/vh0;->OooOo0O:Landroid/widget/TextView;
+
+    .line 433
+    const-string v5, "history_num"
+
+    .line 435
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 438
+    move-result-object v8
+
+    .line 439
+    invoke-static {v5, v8}, Lcom/androidx/lu;->OooOo0o(Ljava/lang/String;Ljava/lang/Integer;)I
+
+    .line 442
+    move-result v5
+
+    .line 443
+    invoke-static {v5}, Lcom/androidx/ew;->OooO00o(I)Ljava/lang/String;
+
+    .line 446
+    move-result-object v5
+
+    .line 447
+    invoke-virtual {v3, v5}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 450
+    iget-object v3, p0, Lcom/androidx/vh0;->OooOo0o:Landroid/widget/TextView;
+
+    .line 452
+    const-string v5, "search_view"
+
+    .line 454
+    invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 457
+    move-result-object v8
+
+    .line 458
+    invoke-static {v5, v8}, Lcom/androidx/lu;->OooOo0o(Ljava/lang/String;Ljava/lang/Integer;)I
+
+    .line 461
+    move-result v5
+
+    .line 462
+    if-nez v5, :cond_1d2
+
+    .line 464
+    const-string v5, "文字列表"
+
+    .line 466
+    goto :goto_1d4
+
+    .line 467
+    :cond_1d2
+    const-string v5, "缩略图"
+
+    .line 469
+    :goto_1d4
+    invoke-virtual {v3, v5}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 472
+    const-string v3, "custom_store_house_selected"
+
+    .line 474
+    invoke-static {v2, v3}, Lcom/androidx/sm0;->OooOOoo(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Object;
+
+    .line 477
+    move-result-object v2
+
+    .line 478
+    check-cast v2, Lcom/github/tvbox/osc/bean/MoreSourceBean;
+
+    .line 480
+    if-eqz v2, :cond_1eb
+
+    .line 482
+    iget-object v3, p0, Lcom/androidx/vh0;->OooOOoo:Landroid/widget/TextView;
+
+    .line 484
+    invoke-virtual {v2}, Lcom/github/tvbox/osc/bean/MoreSourceBean;->getSourceName()Ljava/lang/String;
+
+    .line 487
+    move-result-object v2
+
+    .line 488
+    invoke-virtual {v3, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 491
+    goto :goto_1fc
+
+    .line 492
+    :cond_1eb
+    iget-object v2, p0, Lcom/androidx/vh0;->OooOOoo:Landroid/widget/TextView;
+
+    .line 494
+    invoke-static {}, Lcom/androidx/o0oOo0O0;->get()Lcom/androidx/o0oOo0O0;
+
+    .line 497
+    move-result-object v3
+
+    .line 498
+    invoke-virtual {v3}, Lcom/androidx/o0oOo0O0;->getHomeSourceBean()Lcom/github/tvbox/osc/bean/SourceBean;
+
+    .line 501
+    move-result-object v3
+
+    .line 502
+    invoke-virtual {v3}, Lcom/github/tvbox/osc/bean/SourceBean;->getName()Ljava/lang/String;
+
+    .line 505
+    move-result-object v3
+
+    .line 506
+    invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 509
+    :goto_1fc
+    iget-object v2, p0, Lcom/androidx/vh0;->OooOOo0:Landroid/widget/TextView;
+
+    .line 511
+    const-string v3, "play_scale"
+
+    .line 513
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 516
+    move-result-object v5
+
+    .line 517
+    invoke-static {v3, v5}, Lcom/androidx/lu;->OooOo0o(Ljava/lang/String;Ljava/lang/Integer;)I
+
+    .line 520
+    move-result v3
+
+    .line 521
+    invoke-static {v3}, Lcom/androidx/lu;->OooOoO(I)Ljava/lang/String;
+
+    .line 524
+    move-result-object v3
+
+    .line 525
+    invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 528
+    iget-object v2, p0, Lcom/androidx/vh0;->OooOOOO:Landroid/widget/TextView;
+
+    .line 530
+    const-string v3, "play_type"
+
+    .line 532
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 535
+    move-result-object v5
+
+    .line 536
+    invoke-static {v3, v5}, Lcom/androidx/lu;->OooOo0o(Ljava/lang/String;Ljava/lang/Integer;)I
+
+    .line 539
+    move-result v3
+
+    .line 540
+    invoke-static {v3}, Lcom/androidx/lu;->OooOoO0(I)Ljava/lang/String;
+
+    .line 543
+    move-result-object v3
+
+    .line 544
+    invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 547
+    iget-object v2, p0, Lcom/androidx/vh0;->OooOOOo:Landroid/widget/TextView;
+
+    .line 549
+    const-string v3, "play_render"
+
+    .line 551
+    invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 554
+    move-result-object v5
+
+    .line 555
+    invoke-static {v3, v5}, Lcom/androidx/lu;->OooOo0o(Ljava/lang/String;Ljava/lang/Integer;)I
+
+    .line 558
+    move-result v3
+
+    .line 559
+    if-ne v3, v6, :cond_233
+
+    .line 561
+    const-string v3, "SurfaceView"
+
+    .line 563
+    goto :goto_235
+
+    .line 564
+    :cond_233
+    const-string v3, "TextureView"
+
+    .line 566
+    :goto_235
+    invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 569
+    sget v2, Lcom/github/tvbox/osc/R$id;->tvExoBuffer:I
+
+    .line 571
+    invoke-virtual {p0, v2}, Lcom/androidx/oOOO00Oo;->OooO0OO(I)Landroid/view/View;
+
+    .line 574
+    move-result-object v2
+
+    .line 575
+    check-cast v2, Landroid/widget/TextView;
+
+    .line 577
+    sget v3, Lcom/github/tvbox/osc/R$id;->ll_exo_buffer:I
+
+    .line 579
+    invoke-virtual {p0, v3}, Lcom/androidx/oOOO00Oo;->OooO0OO(I)Landroid/view/View;
+
+    .line 582
+    move-result-object v3
+
+    .line 583
+    new-instance v5, Lcom/androidx/oO0O0;
+
+    .line 585
+    const/4 v8, 0x5
+
+    .line 586
+    invoke-direct {v5, v2, v8}, Lcom/androidx/oO0O0;-><init>(Ljava/lang/Object;I)V
+
+    .line 589
+    invoke-virtual {v3, v5}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 592
+    const v3, 0xc350
+
+    .line 595
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 598
+    move-result-object v3
+
+    .line 599
+    const-string v5, "EXO_MAX_BUFFER_TIME"
+
+    .line 601
+    invoke-static {v5, v3}, Lcom/androidx/lu;->OooOo0o(Ljava/lang/String;Ljava/lang/Integer;)I
+
+    .line 604
+    move-result v3
+
+    .line 605
+    sget-object v5, Lcom/androidx/hn;->OooO0oO:Ljava/util/ArrayList;
+
+    .line 607
+    invoke-interface {v5}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    .line 610
+    move-result-object v5
+
+    .line 611
+    :cond_262
+    invoke-interface {v5}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 614
+    move-result v9
+
+    .line 615
+    if-eqz v9, :cond_277
+
+    .line 617
+    invoke-interface {v5}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 620
+    move-result-object v9
+
+    .line 621
+    check-cast v9, Lcom/androidx/gn;
+
+    .line 623
+    iget v10, v9, Lcom/androidx/gn;->OooO0O0:I
+
+    .line 625
+    if-ne v10, v3, :cond_262
+
+    .line 627
+    iget-object v3, v9, Lcom/androidx/gn;->OooO00o:Ljava/lang/String;
+
+    .line 629
+    invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 632
+    :cond_277
+    sget v2, Lcom/github/tvbox/osc/R$id;->thunerCache:I
+
+    .line 634
+    invoke-virtual {p0, v2}, Lcom/androidx/oOOO00Oo;->OooO0OO(I)Landroid/view/View;
+
+    .line 637
+    move-result-object v2
+
+    .line 638
+    new-instance v3, Lcom/androidx/nh0;
+
+    .line 640
+    invoke-direct {v3, p0, v8}, Lcom/androidx/nh0;-><init>(Lcom/androidx/vh0;I)V
+
+    .line 643
+    invoke-virtual {v2, v3}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 646
+    const/16 v2, 0x10
+
+    .line 648
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 651
+    move-result-object v2
+
+    .line 652
+    const-string v3, "thread_count"
+
+    .line 654
+    invoke-static {v3, v2}, Lcom/androidx/lu;->OooOo0o(Ljava/lang/String;Ljava/lang/Integer;)I
+
+    .line 657
+    move-result v2
+
+    .line 658
+    iget-object v3, p0, Lcom/androidx/vh0;->OooOOO0:Landroid/widget/TextView;
+
+    .line 660
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    .line 662
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 665
+    invoke-virtual {v5, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 668
+    invoke-virtual {v5, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 671
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 674
+    move-result-object v1
+
+    .line 675
+    invoke-virtual {v3, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 678
+    iget-object v1, p0, Lcom/androidx/vh0;->OooOOO:Landroid/widget/LinearLayout;
+
+    .line 680
+    new-instance v2, Lcom/androidx/vg0;
+
+    .line 682
+    invoke-direct {v2, p0, v8}, Lcom/androidx/vg0;-><init>(Lcom/androidx/vh0;I)V
+
+    .line 685
+    invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 688
+    sget v1, Lcom/github/tvbox/osc/R$id;->llBackup:I
+
+    .line 690
+    invoke-virtual {p0, v1}, Lcom/androidx/oOOO00Oo;->OooO0OO(I)Landroid/view/View;
+
+    .line 693
+    move-result-object v1
+
+    .line 694
+    new-instance v2, Lcom/androidx/nh0;
+
+    .line 696
+    const/4 v3, 0x6
+
+    .line 697
+    invoke-direct {v2, p0, v3}, Lcom/androidx/nh0;-><init>(Lcom/androidx/vh0;I)V
+
+    .line 700
+    invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 703
+    sget v1, Lcom/github/tvbox/osc/R$id;->llAbout:I
+
+    .line 705
+    invoke-virtual {p0, v1}, Lcom/androidx/oOOO00Oo;->OooO0OO(I)Landroid/view/View;
+
+    .line 708
+    move-result-object v1
+
+    .line 709
+    new-instance v2, Lcom/androidx/nh0;
+
+    .line 711
+    const/4 v5, 0x7
+
+    .line 712
+    invoke-direct {v2, p0, v5}, Lcom/androidx/nh0;-><init>(Lcom/androidx/vh0;I)V
+
+    .line 715
+    invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 718
+    sget v1, Lcom/github/tvbox/osc/R$id;->llAbout:I
+
+    .line 720
+    invoke-virtual {p0, v1}, Lcom/androidx/oOOO00Oo;->OooO0OO(I)Landroid/view/View;
+
+    .line 723
+    move-result-object v1
+
+    .line 724
+    new-instance v2, Lcom/androidx/xg0;
+
+    .line 726
+    invoke-direct {v2}, Lcom/androidx/xg0;-><init>()V
+
+    .line 729
+    invoke-virtual {v1, v2}, Landroid/view/View;->setOnLongClickListener(Landroid/view/View$OnLongClickListener;)V
+
+    .line 732
+    sget v1, Lcom/github/tvbox/osc/R$id;->text_about:I
+
+    .line 734
+    invoke-virtual {p0, v1}, Lcom/androidx/oOOO00Oo;->OooO0OO(I)Landroid/view/View;
+
+    .line 737
+    move-result-object v1
+
+    .line 738
+    check-cast v1, Landroid/widget/TextView;
+
+    .line 740
+    const-string v2, "我的月半小夜曲 9.9.9.9"
+
+    .line 742
+    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 745
+    sget v1, Lcom/github/tvbox/osc/R$id;->llWp:I
+
+    .line 747
+    invoke-virtual {p0, v1}, Lcom/androidx/oOOO00Oo;->OooO0OO(I)Landroid/view/View;
+
+    .line 750
+    move-result-object v1
+
+    .line 751
+    new-instance v2, Lcom/androidx/nh0;
+
+    .line 753
+    const/16 v8, 0x8
+
+    .line 755
+    invoke-direct {v2, p0, v8}, Lcom/androidx/nh0;-><init>(Lcom/androidx/vh0;I)V
+
+    .line 758
+    invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 761
+    sget v1, Lcom/github/tvbox/osc/R$id;->llWpRecovery:I
+
+    .line 763
+    invoke-virtual {p0, v1}, Lcom/androidx/oOOO00Oo;->OooO0OO(I)Landroid/view/View;
+
+    .line 766
+    move-result-object v1
+
+    .line 767
+    new-instance v2, Lcom/androidx/nh0;
+
+    .line 769
+    const/16 v9, 0x9
+
+    .line 771
+    invoke-direct {v2, p0, v9}, Lcom/androidx/nh0;-><init>(Lcom/androidx/vh0;I)V
+
+    .line 774
+    invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 777
+    sget v1, Lcom/github/tvbox/osc/R$id;->llDns:I
+
+    .line 779
+    invoke-virtual {p0, v1}, Lcom/androidx/oOOO00Oo;->OooO0OO(I)Landroid/view/View;
+
+    .line 782
+    move-result-object v1
+
+    .line 783
+    new-instance v2, Lcom/androidx/vg0;
+
+    .line 785
+    invoke-direct {v2, p0, v3}, Lcom/androidx/vg0;-><init>(Lcom/androidx/vh0;I)V
+
+    .line 788
+    invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 791
+    sget v1, Lcom/github/tvbox/osc/R$id;->default_more_store:I
+
+    .line 793
+    invoke-virtual {p0, v1}, Lcom/androidx/oOOO00Oo;->OooO0OO(I)Landroid/view/View;
+
+    .line 796
+    move-result-object v1
+
+    .line 797
+    new-instance v2, Lcom/androidx/l;
+
+    .line 799
+    invoke-direct {v2, p0, v0}, Lcom/androidx/l;-><init>(Ljava/lang/Object;I)V
+
+    .line 802
+    invoke-virtual {v1, v2}, Landroid/view/View;->setOnLongClickListener(Landroid/view/View$OnLongClickListener;)V
+
+    .line 805
+    const-string v1, "home_activity"
+
+    .line 807
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 810
+    move-result-object v2
+
+    .line 811
+    invoke-static {v1, v2}, Lcom/androidx/lu;->OooOo0o(Ljava/lang/String;Ljava/lang/Integer;)I
+
+    .line 814
+    move-result v1
+
+    .line 815
+    iput v1, p0, Lcom/androidx/vh0;->Oooo000:I
+
+    .line 817
+    sget v1, Lcom/github/tvbox/osc/R$id;->home_page_text:I
+
+    .line 819
+    invoke-virtual {p0, v1}, Lcom/androidx/oOOO00Oo;->OooO0OO(I)Landroid/view/View;
+
+    .line 822
+    move-result-object v1
+
+    .line 823
+    check-cast v1, Landroid/widget/TextView;
+
+    .line 825
+    iget v2, p0, Lcom/androidx/vh0;->Oooo000:I
+
+    .line 827
+    if-nez v2, :cond_33f
+
+    .line 829
+    const-string v2, "点播"
+
+    .line 831
+    goto :goto_341
+
+    .line 832
+    :cond_33f
+    const-string v2, "直播"
+
+    .line 834
+    :goto_341
+    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 837
+    sget v2, Lcom/github/tvbox/osc/R$id;->home_page:I
+
+    .line 839
+    invoke-virtual {p0, v2}, Lcom/androidx/oOOO00Oo;->OooO0OO(I)Landroid/view/View;
+
+    .line 842
+    move-result-object v2
+
+    .line 843
+    new-instance v3, Lcom/androidx/oO0O0O0o;
+
+    .line 845
+    invoke-direct {v3, p0, v1, v0}, Lcom/androidx/oO0O0O0o;-><init>(Ljava/lang/Object;Landroid/view/KeyEvent$Callback;I)V
+
+    .line 848
+    invoke-virtual {v2, v3}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 851
+    sget v1, Lcom/github/tvbox/osc/R$id;->llMediaCodec:I
+
+    .line 853
+    invoke-virtual {p0, v1}, Lcom/androidx/oOOO00Oo;->OooO0OO(I)Landroid/view/View;
+
+    .line 856
+    move-result-object v1
+
+    .line 857
+    new-instance v2, Lcom/androidx/ch0;
+
+    .line 859
+    invoke-direct {v2, p0}, Lcom/androidx/ch0;-><init>(Lcom/androidx/vh0;)V
+
+    .line 862
+    invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 865
+    sget v1, Lcom/github/tvbox/osc/R$id;->llScale:I
+
+    .line 867
+    invoke-virtual {p0, v1}, Lcom/androidx/oOOO00Oo;->OooO0OO(I)Landroid/view/View;
+
+    .line 870
+    move-result-object v1
+
+    .line 871
+    new-instance v2, Lcom/androidx/eh0;
+
+    .line 873
+    invoke-direct {v2, p0}, Lcom/androidx/eh0;-><init>(Lcom/androidx/vh0;)V
+
+    .line 876
+    invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 879
+    sget v1, Lcom/github/tvbox/osc/R$id;->llPlay:I
+
+    .line 881
+    invoke-virtual {p0, v1}, Lcom/androidx/oOOO00Oo;->OooO0OO(I)Landroid/view/View;
+
+    .line 884
+    move-result-object v1
+
+    .line 885
+    new-instance v2, Lcom/androidx/gh0;
+
+    .line 887
+    invoke-direct {v2, p0}, Lcom/androidx/gh0;-><init>(Lcom/androidx/vh0;)V
+
+    .line 890
+    invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 893
+    sget v1, Lcom/github/tvbox/osc/R$id;->llRender:I
+
+    .line 895
+    invoke-virtual {p0, v1}, Lcom/androidx/oOOO00Oo;->OooO0OO(I)Landroid/view/View;
+
+    .line 898
+    move-result-object v1
+
+    .line 899
+    new-instance v2, Lcom/androidx/ih0;
+
+    .line 901
+    invoke-direct {v2, p0}, Lcom/androidx/ih0;-><init>(Lcom/androidx/vh0;)V
+
+    .line 904
+    invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 907
+    sget v1, Lcom/github/tvbox/osc/R$id;->llHomeRec:I
+
+    .line 909
+    invoke-virtual {p0, v1}, Lcom/androidx/oOOO00Oo;->OooO0OO(I)Landroid/view/View;
+
+    .line 912
+    move-result-object v1
+
+    .line 913
+    new-instance v2, Lcom/androidx/kh0;
+
+    .line 915
+    invoke-direct {v2, p0}, Lcom/androidx/kh0;-><init>(Lcom/androidx/vh0;)V
+
+    .line 918
+    invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 921
+    sget v1, Lcom/github/tvbox/osc/R$id;->llSearchView:I
+
+    .line 923
+    invoke-virtual {p0, v1}, Lcom/androidx/oOOO00Oo;->OooO0OO(I)Landroid/view/View;
+
+    .line 926
+    move-result-object v1
+
+    .line 927
+    new-instance v2, Lcom/androidx/mh0;
+
+    .line 929
+    invoke-direct {v2, p0}, Lcom/androidx/mh0;-><init>(Lcom/androidx/vh0;)V
+
+    .line 932
+    invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 935
+    sget v1, Lcom/github/tvbox/osc/R$id;->showPreview:I
+
+    .line 937
+    invoke-virtual {p0, v1}, Lcom/androidx/oOOO00Oo;->OooO0OO(I)Landroid/view/View;
+
+    .line 940
+    move-result-object v1
+
+    .line 941
+    new-instance v2, Lcom/androidx/nh0;
+
+    .line 943
+    invoke-direct {v2, p0, v4}, Lcom/androidx/nh0;-><init>(Lcom/androidx/vh0;I)V
+
+    .line 946
+    invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 949
+    sget v1, Lcom/github/tvbox/osc/R$id;->llHistoryNum:I
+
+    .line 951
+    invoke-virtual {p0, v1}, Lcom/androidx/oOOO00Oo;->OooO0OO(I)Landroid/view/View;
+
+    .line 954
+    move-result-object v1
+
+    .line 955
+    new-instance v2, Lcom/androidx/ph0;
+
+    .line 957
+    invoke-direct {v2, p0}, Lcom/androidx/ph0;-><init>(Lcom/androidx/vh0;)V
+
+    .line 960
+    invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 963
+    sget v1, Lcom/github/tvbox/osc/R$id;->showCacheTime:I
+
+    .line 965
+    invoke-virtual {p0, v1}, Lcom/androidx/oOOO00Oo;->OooO0OO(I)Landroid/view/View;
+
+    .line 968
+    move-result-object v1
+
+    .line 969
+    new-instance v2, Lcom/androidx/nh0;
+
+    .line 971
+    invoke-direct {v2, p0, v0}, Lcom/androidx/nh0;-><init>(Lcom/androidx/vh0;I)V
+
+    .line 974
+    invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 977
+    sget v1, Lcom/github/tvbox/osc/R$id;->more_source:I
+
+    .line 979
+    invoke-virtual {p0, v1}, Lcom/androidx/oOOO00Oo;->OooO0OO(I)Landroid/view/View;
+
+    .line 982
+    move-result-object v1
+
+    .line 983
+    new-instance v2, Lcom/androidx/vg0;
+
+    .line 985
+    invoke-direct {v2, p0, v5}, Lcom/androidx/vg0;-><init>(Lcom/androidx/vh0;I)V
+
+    .line 988
+    invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 991
+    sget v1, Lcom/github/tvbox/osc/R$id;->default_more_store:I
+
+    .line 993
+    invoke-virtual {p0, v1}, Lcom/androidx/oOOO00Oo;->OooO0OO(I)Landroid/view/View;
+
+    .line 996
+    move-result-object v1
+
+    .line 997
+    new-instance v2, Lcom/androidx/vg0;
+
+    .line 999
+    invoke-direct {v2, p0, v8}, Lcom/androidx/vg0;-><init>(Lcom/androidx/vh0;I)V
+
+    .line 1002
+    invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 1005
+    sget v1, Lcom/github/tvbox/osc/R$id;->ll_immersive_switch:I
+
+    .line 1007
+    invoke-virtual {p0, v1}, Lcom/androidx/oOOO00Oo;->OooO0OO(I)Landroid/view/View;
+
+    .line 1010
+    move-result-object v1
+
+    .line 1011
+    sget v2, Lcom/github/tvbox/osc/R$id;->text_immersive_switch:I
+
+    .line 1013
+    invoke-virtual {p0, v2}, Lcom/androidx/oOOO00Oo;->OooO0OO(I)Landroid/view/View;
+
+    .line 1016
+    move-result-object v2
+
+    .line 1017
+    check-cast v2, Landroid/widget/TextView;
+
+    .line 1019
+    iput-object v2, p0, Lcom/androidx/vh0;->Oooo00O:Landroid/widget/TextView;
+
+    .line 1021
+    iget-object v3, p0, Lcom/androidx/vh0;->OooOoo:Lcom/github/tvbox/osc/bean/LiveSourceBean;
+
+    .line 1023
+    if-eqz v3, :cond_407
+
+    .line 1025
+    invoke-virtual {v3}, Lcom/github/tvbox/osc/bean/LiveSourceBean;->getSourceName()Ljava/lang/String;
+
+    .line 1028
+    move-result-object v3
+
+    .line 1029
+    invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 1032
+    :cond_407
+    new-instance v2, Lcom/androidx/vg0;
+
+    .line 1034
+    invoke-direct {v2, p0, v9}, Lcom/androidx/vg0;-><init>(Lcom/androidx/vh0;I)V
+
+    .line 1037
+    invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 1040
+    iget-object v1, p0, Lcom/androidx/vh0;->OooOoO:Landroid/view/View;
+
+    .line 1042
+    new-instance v2, Lcom/androidx/vg0;
+
+    .line 1044
+    invoke-direct {v2, p0, v6}, Lcom/androidx/vg0;-><init>(Lcom/androidx/vh0;I)V
+
+    .line 1047
+    invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 1050
+    sget v1, Lcom/github/tvbox/osc/R$id;->clear_interface_data:I
+
+    .line 1052
+    invoke-virtual {p0, v1}, Lcom/androidx/oOOO00Oo;->OooO0OO(I)Landroid/view/View;
+
+    .line 1055
+    move-result-object v1
+
+    .line 1056
+    new-instance v2, Lcom/androidx/vg0;
+
+    .line 1058
+    invoke-direct {v2, p0, v0}, Lcom/androidx/vg0;-><init>(Lcom/androidx/vh0;I)V
+
+    .line 1061
+    invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 1064
+    sget v0, Lcom/github/tvbox/osc/R$id;->danmuSwitch:I
+
+    .line 1066
+    invoke-virtual {p0, v0}, Lcom/androidx/oOOO00Oo;->OooO0OO(I)Landroid/view/View;
+
+    .line 1069
+    move-result-object v0
+
+    .line 1070
+    check-cast v0, Landroid/widget/TextView;
+
+    .line 1072
+    iput-object v0, p0, Lcom/androidx/vh0;->Oooo00o:Landroid/widget/TextView;
+
+    .line 1074
+    sget v0, Lcom/github/tvbox/osc/R$id;->llDanmu:I
+
+    .line 1076
+    invoke-virtual {p0, v0}, Lcom/androidx/oOOO00Oo;->OooO0OO(I)Landroid/view/View;
+
+    .line 1079
+    move-result-object v0
+
+    .line 1080
+    new-instance v1, Lcom/androidx/vg0;
+
+    .line 1082
+    const/4 v2, 0x3
+
+    .line 1083
+    invoke-direct {v1, p0, v2}, Lcom/androidx/vg0;-><init>(Lcom/androidx/vh0;I)V
+
+    .line 1086
+    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 1089
+    sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+
+    .line 1091
+    const-string v1, "DAN_MU_SWITCH"
+
+    .line 1093
+    invoke-static {v1, v0}, Lcom/androidx/lu;->OooOOo(Ljava/lang/String;Ljava/lang/Boolean;)Z
+
+    .line 1096
+    move-result v1
+
+    .line 1097
+    iget-object v3, p0, Lcom/androidx/vh0;->Oooo00o:Landroid/widget/TextView;
+
+    .line 1099
+    if-eqz v1, :cond_44f
+
+    .line 1101
+    const-string v1, "开"
+
+    .line 1103
+    goto :goto_451
+
+    .line 1104
+    :cond_44f
+    const-string v1, "关"
+
+    .line 1106
+    :goto_451
+    invoke-virtual {v3, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 1109
+    sget v1, Lcom/github/tvbox/osc/R$id;->exoCacheSize:I
+
+    .line 1111
+    invoke-virtual {p0, v1}, Lcom/androidx/oOOO00Oo;->OooO0OO(I)Landroid/view/View;
+
+    .line 1114
+    move-result-object v1
+
+    .line 1115
+    check-cast v1, Landroid/widget/TextView;
+
+    .line 1117
+    iput-object v1, p0, Lcom/androidx/vh0;->Oooo0:Landroid/widget/TextView;
+
+    .line 1119
+    sget v1, Lcom/github/tvbox/osc/R$id;->exoCache:I
+
+    .line 1121
+    invoke-virtual {p0, v1}, Lcom/androidx/oOOO00Oo;->OooO0OO(I)Landroid/view/View;
+
+    .line 1124
+    move-result-object v1
+
+    .line 1125
+    new-instance v3, Lcom/androidx/nh0;
+
+    .line 1127
+    invoke-direct {v3, p0, v2}, Lcom/androidx/nh0;-><init>(Lcom/androidx/vh0;I)V
+
+    .line 1130
+    invoke-virtual {v1, v3}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 1133
+    sget v1, Lcom/github/tvbox/osc/R$id;->exoCache:I
+
+    .line 1135
+    invoke-virtual {p0, v1}, Lcom/androidx/oOOO00Oo;->OooO0OO(I)Landroid/view/View;
+
+    .line 1138
+    move-result-object v1
+
+    .line 1139
+    new-instance v2, Lcom/androidx/wg0;
+
+    .line 1141
+    invoke-direct {v2, p0, v4}, Lcom/androidx/wg0;-><init>(Lcom/androidx/vh0;I)V
+
+    .line 1144
+    invoke-virtual {v1, v2}, Landroid/view/View;->setOnLongClickListener(Landroid/view/View$OnLongClickListener;)V
+
+    .line 1147
+    const-string v1, "EXO_CACHE_FORBID"
+
+    .line 1149
+    invoke-static {v1, v0}, Lcom/androidx/lu;->OooOOo(Ljava/lang/String;Ljava/lang/Boolean;)Z
+
+    .line 1152
+    move-result v0
+
+    .line 1153
+    if-eqz v0, :cond_48a
+
+    .line 1155
+    iget-object v0, p0, Lcom/androidx/vh0;->Oooo0:Landroid/widget/TextView;
+
+    .line 1157
+    const-string v1, "已禁用"
+
+    .line 1159
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 1162
+    goto :goto_4a2
+
+    .line 1163
+    :cond_48a
+    iget-object v0, p0, Lcom/androidx/vh0;->Oooo0O0:Ljava/io/File;
+
+    .line 1165
+    invoke-static {v0}, Lcom/androidx/yp;->OooO(Ljava/io/File;)J
+
+    .line 1168
+    move-result-wide v0
+
+    .line 1169
+    iget-object v2, p0, Lcom/androidx/vh0;->Oooo0:Landroid/widget/TextView;
+
+    .line 1171
+    const-wide/16 v3, 0x0
+
+    .line 1173
+    cmp-long v5, v0, v3
+
+    .line 1175
+    if-gtz v5, :cond_49b
+
+    .line 1177
+    const-string v0, "0M"
+
+    .line 1179
+    goto :goto_49f
+
+    .line 1180
+    :cond_49b
+    invoke-static {v0, v1}, Lcom/androidx/uc1;->OooO0Oo(J)Ljava/lang/String;
+
+    .line 1183
+    move-result-object v0
+
+    .line 1184
+    :goto_49f
+    invoke-virtual {v2, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 1187
+    :goto_4a2
+    sget v0, Lcom/github/tvbox/osc/R$id;->operatePrefer:I
+
+    .line 1189
+    invoke-virtual {p0, v0}, Lcom/androidx/oOOO00Oo;->OooO0OO(I)Landroid/view/View;
+
+    .line 1192
+    move-result-object v0
+
+    .line 1193
+    new-instance v1, Lcom/androidx/vg0;
+
+    .line 1195
+    invoke-direct {v1, p0, v7}, Lcom/androidx/vg0;-><init>(Lcom/androidx/vh0;I)V
+
+    .line 1198
+    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 1201
+    invoke-virtual {p0}, Lcom/androidx/vh0;->OooO()V
+
+    .line 1204
+    return-void
+.end method
+
+.method public final onDestroy()V
+    .registers 2
+
+    .line 1
+    invoke-super {p0}, Landroidx/fragment/app/Fragment;->onDestroy()V
+
+    .line 4
+    invoke-static {}, Lcom/androidx/mm;->OooO0O0()Lcom/androidx/mm;
+
+    .line 7
+    move-result-object v0
+
+    .line 8
+    invoke-virtual {v0, p0}, Lcom/androidx/mm;->OooOO0o(Ljava/lang/Object;)V
+
+    .line 11
+    return-void
+.end method
+
+.method public final onDestroyView()V
+    .registers 3
+
+    .line 1
+    invoke-super {p0}, Lcom/androidx/oOOO00Oo;->onDestroyView()V
+
+    .line 4
+    sget v0, Lcom/github/tvbox/osc/ui/activity/SettingActivity;->OooOOOO:I
+
+    .line 6
+    sget-object v0, Lcom/androidx/fl0;->OooO00o:Lcom/androidx/gl0;
+
+    .line 8
+    const-string v1, "wall_paper"
+
+    .line 10
+    invoke-virtual {v0, v1}, Lcom/androidx/gl0;->OooO00o(Ljava/lang/Object;)V
+
+    .line 13
+    return-void
+.end method
+
+.method public onUrlChange(Lcom/androidx/ws0;)V
+    .registers 4
+    .annotation runtime Lcom/androidx/k51;
+    .end annotation
+
+    .line 1
+    if-nez p1, :cond_3
+
+    .line 3
+    return-void
+
+    .line 4
+    :cond_3
+    iget v0, p1, Lcom/androidx/ws0;->type:I
+
+    .line 6
+    const/16 v1, 0x8
+
+    .line 8
+    if-ne v0, v1, :cond_12
+
+    .line 10
+    iget-object v0, p0, Lcom/androidx/vh0;->OooOOo:Landroid/widget/TextView;
+
+    .line 12
+    iget-object v1, p1, Lcom/androidx/ws0;->obj:Ljava/lang/Object;
+
+    .line 14
+    check-cast v1, Ljava/lang/String;
+
+    .line 16
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 19
+    :cond_12
+    iget v0, p1, Lcom/androidx/ws0;->type:I
+
+    .line 21
+    const/16 v1, 0x13
+
+    .line 23
+    if-ne v0, v1, :cond_25
+
+    .line 25
+    iget-object v0, p0, Lcom/androidx/vh0;->Oooo00O:Landroid/widget/TextView;
+
+    .line 27
+    iget-object v1, p1, Lcom/androidx/ws0;->obj:Ljava/lang/Object;
+
+    .line 29
+    check-cast v1, Lcom/github/tvbox/osc/bean/LiveSourceBean;
+
+    .line 31
+    invoke-virtual {v1}, Lcom/github/tvbox/osc/bean/LiveSourceBean;->getSourceName()Ljava/lang/String;
+
+    .line 34
+    move-result-object v1
+
+    .line 35
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 38
+    :cond_25
+    iget v0, p1, Lcom/androidx/ws0;->type:I
+
+    .line 40
+    const/16 v1, 0x14
+
+    .line 42
+    if-ne v0, v1, :cond_38
+
+    .line 44
+    iget-object v0, p0, Lcom/androidx/vh0;->OooOOoo:Landroid/widget/TextView;
+
+    .line 46
+    iget-object p1, p1, Lcom/androidx/ws0;->obj:Ljava/lang/Object;
+
+    .line 48
+    check-cast p1, Lcom/github/tvbox/osc/bean/MoreSourceBean;
+
+    .line 50
+    invoke-virtual {p1}, Lcom/github/tvbox/osc/bean/MoreSourceBean;->getSourceName()Ljava/lang/String;
+
+    .line 53
+    move-result-object p1
+
+    .line 54
+    invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 57
+    :cond_38
+    return-void
+.end method
