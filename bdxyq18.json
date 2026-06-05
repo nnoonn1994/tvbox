@@ -45,7 +45,7 @@
       "key": "lzzy",
       "name": "☄️-量子",
       "type": 1,
-      "api": "https://cj.lziapi.com/api.php/provide/vod/?ac=detail",
+      "api": "https://cj.lziapi.com/api.php/provide/vod/?ac=list",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
@@ -93,6 +93,15 @@
       "categories": [
         "伦理片"
       ]
+    },
+    {
+      "key": "暴风吧",
+      "name": "🌪-暴风",
+      "type": 1,
+      "api": "https://bfzyapi.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
     },
     {
       "key": "tyzy",
