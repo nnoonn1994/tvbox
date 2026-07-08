@@ -2,11 +2,13 @@
   "spider": "./xs.jar",
   "sites": [
     {
-      "key": "豆瓣",
+      "key": "推荐",
       "name": "洛有心思-播放卡顿请尝试更换线路",
-      "type": 3,
-      "api": "csp_Douban",
-      "searchable": 0
+      "type": 1,
+      "api": "http://api.ffzyapi.com/api.php/provide/vod/?ac=detail",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0
     },
     {
       "key": "MDrive",
